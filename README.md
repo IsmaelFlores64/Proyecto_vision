@@ -42,4 +42,6 @@ python entrenamiento.py
 python inferencia.py
 5. **Visualizar los resultados**
 
-Los resultados de las detecciones se almacenarán en la carpeta runs/detect/, donde se podrán observar las imágenes procesadas con los componentes identificados.
+Los resultados de las detecciones se almacenarán en la carpeta runs/detect/train, donde se podrán observar las imágenes procesadas con los componentes identificados.
+
+El resultado se mostrara en una imagen que se encontrara en la carpeta de evidencias
