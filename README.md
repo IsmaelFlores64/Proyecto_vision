@@ -1,9 +1,15 @@
 # Proyecto Visión Artificial:
-#Detección de Componentes Electrónicos
+# Detección de Componentes Electrónicos
 
-##Integrantes:
+## Integrantes:
 Matias Garay Mendoza (23310331)
 Jesús Ismael Flores Pardo (233103
 
-##Problemática:
+### Problemática:
 En la vida diaria, los componentes electrónicos son indispensables, sin embargo no todos son capaces de reconocerlos, ni todos cuentan con la necesidad de hacerlo. Este proyecto responde a aquellos quienes se encuentran en el proceso de aprendizaje a identificar cómo es que lucen algunos de estos dispositivos.
+
+### Descripción del Hardware Propuesto
+Este proyecto no necesitaría de ningún hardware para su ejecución salvo la computadora donde esté corriendo y el componente electrónico a analizar. Es importante añadir que la computadora que corre el programa debe de contar con acceso a una cámara.
+
+### Flujo de Funcionamiento
+Para su funcionamiento, el programa detecta la imagen y muestra el nombre del dispositivo y donde se encuentra.
