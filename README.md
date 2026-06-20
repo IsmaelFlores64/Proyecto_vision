@@ -1,8 +1,14 @@
 # Proyecto Visión Artificial:
 # Detección de Componentes Electrónicos
 
+<<<<<<< HEAD
 ## Integrantes:
 Jesús Ismael Flores Pardo (23310364) y Matias Garay Mendoza (23310331)
+=======
+##Integrantes:
+Matias Garay Mendoza (23310331)
+Jesús Ismael Flores Pardo (23310364)
+>>>>>>> ddb1814 (Avance)
 
 ## Estudio de Caso:
 ### Problemática:
