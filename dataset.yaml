@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['Capacitor', 'Resistencia']
+
+roboflow:
+  workspace: matiass-workspace-a8y8u
+  project: dispelect
+  version: dataset
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/matiass-workspace-a8y8u/dispelect/dataset/dataset

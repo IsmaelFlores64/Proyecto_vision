@@ -1,6 +1,0 @@
-path: ./datos/Entrenamiento
-train: Imagenes
-val: Imagenes
-
-names:
-  0: Resistencia
