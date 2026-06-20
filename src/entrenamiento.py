@@ -2,34 +2,29 @@ import os
 from ultralytics import YOLO
 
 def iniciar_entrenamiento():
-    # 1. Inicializar el modelo YOLO Nano base (ligero y rápido)
+    # Cargamos el modelo base de YOLO (la versión Nano, que es ligera para la CPU)
     print("Cargando modelo base de YOLO...")
     modelo = YOLO("yolov8n.pt")
 
-    # 2. Ruta del archivo de configuración en español
+    # Archivo de configuración con las rutas de las imágenes y las clases
     ruta_dataset = "datos.yaml" 
 
-    # Validación de seguridad: Verificar si el archivo de configuración existe
+    # Validación rápida para no arrancar a ciegas si falta el archivo .yaml
     if not os.path.exists(ruta_dataset):
-        print(f"Error: No se encontró el archivo '{ruta_dataset}' en la raíz del proyecto.")
-        print("Asegúrate de haber creado el archivo datos.yaml antes de continuar.")
+        print(f"Error: No se encontró el archivo '{ruta_dataset}' en la raíz.")
         return
 
-    print("Iniciando el proceso de entrenamiento de componentes eléctricos...")
+    print("Iniciando el proceso de entrenamiento...")
     
-    # 3. Lanzar el entrenamiento usando la CPU del contenedor
-    # Nota: Usamos device='cpu' porque los entornos virtuales gratuitos no suelen tener GPU.
+    # Arrancamos el entrenamiento con los parámetros del proyecto
     modelo.train(
-        data=ruta_dataset,   # Apunta a tu datos.yaml
-        epochs=50,           # Cantidad de vueltas de entrenamiento
-        imgsz=640,           # Tamaño estándar de imágenes para YOLO
-        batch=16,            # Paquetes de imágenes por iteración
-        device='cpu',        # Evita errores de falta de tarjeta gráfica dedicada
-        name="entrenamiento_componentes_electricos" # Carpeta de salida
+        data=ruta_dataset,   
+        epochs=10,           # Ajustado a 10 épocas para el avance actual
+        imgsz=640,           # Tamaño de imagen estándar para YOLO
+        device='cpu',        # Forzamos uso de CPU para entorno Codespaces
+        name="entrenamiento"  # Define el nombre de la carpeta de salida en 'runs/'
     )
     
     print("¡Entrenamiento finalizado con éxito!")
-    print("El modelo final se ha guardado en la carpeta: runs/detect/entrenamiento_componentes_electricos/weights/best.pt")
-
 
     iniciar_entrenamiento()
