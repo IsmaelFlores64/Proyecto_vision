@@ -1,19 +1,5 @@
 # Proyecto de Visión Artificial: Detección de Componentes Electrónicos
 
-## Instrucciones para Ejecutar el Proyecto
-1. **Clonar el repositorio**:
-git clone https://github.com/IsmaelFlores64/Proyecto_vision.git
-cd Proyecto_vision
-2. **Instalar las dependencias necesarias**:
-pip install ultralytics opencv-python matplotlib
-3. **Ejecutar el entrenamiento del modelo**:
-python entrenamiento.py
-4. **Ejecutar la detección**:
-python inferencia.py
-5. **Visualizar los resultados**
-
-Los resultados de las detecciones se almacenarán en la carpeta runs/detect/, donde se podrán observar las imágenes procesadas con los componentes identificados.
-
 ## Integrantes
 
 * Jesús Ismael Flores Pardo (23310364)
@@ -44,3 +30,16 @@ El sistema utiliza una cámara para capturar imágenes de los componentes electr
 
 Este sistema podría utilizarse en laboratorios de electrónica, almacenes de componentes, instituciones educativas y líneas de producción electrónica. Su implementación permitiría agilizar procesos de identificación y clasificación, reducir errores humanos y servir como herramienta de apoyo para estudiantes que están aprendiendo a reconocer componentes electrónicos.
 
+## Instrucciones para Ejecutar el Proyecto
+1. **Clonar el repositorio**:
+git clone https://github.com/IsmaelFlores64/Proyecto_vision.git
+cd Proyecto_vision
+2. **Instalar las dependencias necesarias**:
+pip install ultralytics opencv-python matplotlib
+3. **Ejecutar el entrenamiento del modelo**:
+python entrenamiento.py
+4. **Ejecutar la detección**:
+python inferencia.py
+5. **Visualizar los resultados**
+
+Los resultados de las detecciones se almacenarán en la carpeta runs/detect/, donde se podrán observar las imágenes procesadas con los componentes identificados.
