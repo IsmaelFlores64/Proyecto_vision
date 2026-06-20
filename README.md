@@ -37,9 +37,9 @@ cd Proyecto_vision
 2. **Instalar las dependencias necesarias**:
 pip install ultralytics opencv-python matplotlib
 3. **Ejecutar el entrenamiento del modelo**:
-python entrenamiento.py
+/workspaces/Proyecto_vision/.venv/bin/python /workspaces/Proyecto_vision/src/entrenamiento.py
 4. **Ejecutar la detección**:
-python inferencia.py
+/workspaces/Proyecto_vision/.venv/bin/python /workspaces/Proyecto_vision/src/inferencia.py
 5. **Visualizar los resultados**
 
 Los resultados de las detecciones se almacenarán en la carpeta runs/detect/train, donde se podrán observar las imágenes procesadas con los componentes identificados.
